@@ -2,7 +2,7 @@
 
 This **Google Chrome** extension allows users who talk in Persian language to
 see Persian Slack messages in RTL direction. This extension does not apply any
-change on non-persian texts and only applues changes to Persian messages.
+change on non-persian texts and only applies changes to Persian messages.
 
 ## Found a bug?
 
