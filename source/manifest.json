@@ -1,18 +1,18 @@
 {
   "manifest_version": 2,
-  "name": "Slack Hebrew",
-  "version": "1.4",
-  "description": "In Slack web app: modify direction to rtl, but only for messages containing hebrew characters",
+  "name": "Slack Persian",
+  "version": "1.0",
+  "description": "In Slack web app: modify direction to rtl, but only for messages containing Persian characters.",
   "icons" : { "128": "icon.png" }, 
-  "author": "Shlomi Matichin <shlomomatichin@gmail.com>",
+  "author": "Alireza Ahmadi <me@alireza.es>",
 
   "page_action": {
-    "default_title": "Slack Hebrew"
+    "default_title": "Slack Persian"
   },
  
   "content_scripts": [{
     "matches": ["*://*.slack.com/*"],
-    "js": ["slack-hebrew.js"],
+    "js": ["slack-persian.js"],
     "all_frames": true
   }]
 

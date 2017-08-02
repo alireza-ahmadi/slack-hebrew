@@ -1,12 +1,12 @@
 document.getElementById('msg_input').dir = 'auto';
 
 function elementShouldBeRTL(element) {
-    return /[א-ת]/.test(element.innerHTML);
+    return /[\u0590-\u05ff\u0600-\u06ff]/.test(element.innerHTML);
 }
 
 function alreadyApplied(element) {
     return element.children.length == 1 && (
-            element.children[0].tagName == "P" || element.children[0].tagName == "p");
+            element.children[0].tagName == 'P' || element.children[0].tagName == 'p');
 }
 
 function applyTo(element) {
@@ -15,7 +15,7 @@ function applyTo(element) {
         var child = element.children[0].children[i];
         if (!(child.style instanceof CSSStyleDeclaration))
             continue;
-        child.style.textAlign = "initial";
+        child.style.textAlign = 'initial';
     }
 }
 
@@ -39,4 +39,4 @@ function domModified() {
     }, 500);
 }
 
-document.body.addEventListener("DOMSubtreeModified", domModified);
+document.body.addEventListener('DOMSubtreeModified', domModified);
