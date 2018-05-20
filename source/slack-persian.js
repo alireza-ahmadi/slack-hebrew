@@ -20,7 +20,7 @@ function applyTo(element) {
 }
 
 function setDirections() {
-    var contents = document.getElementsByClassName('message_body');
+    var contents = document.getElementsByClassName('c-message__body');
     for (var i in contents) {
         var element = contents[i];
         if (!elementShouldBeRTL(element))
